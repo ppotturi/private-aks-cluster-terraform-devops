@@ -5,7 +5,7 @@ terraform {
     }
   }
 
-  required_version = ">= 0.14.9""
+  required_version = ">= 0.14.9"
 }
 
 resource "azurerm_container_registry" "acr" {
