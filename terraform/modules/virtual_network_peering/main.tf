@@ -6,7 +6,7 @@ terraform {
     }
   }
 
-  required_version = "~> 1.9.5"
+  required_version = ">= 0.14.9""
 }
 
 resource "azurerm_virtual_network_peering" "peering" {
