@@ -5,7 +5,7 @@ terraform {
     }
   }
 
-  required_version = ">= 1.5.4"
+  required_version = ">= 1.9.5"
 }
 
 resource "azurerm_kubernetes_cluster_node_pool" "node_pool" {

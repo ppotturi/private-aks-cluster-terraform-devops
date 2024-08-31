@@ -5,7 +5,7 @@ terraform {
     }
   }
 
-  required_version = ">= 1.5.4"
+  required_version = ">= 1.9.5"
 }
 
 resource "azurerm_public_ip" "public_ip" {
