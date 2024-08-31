@@ -68,8 +68,6 @@ jobs:
         export exitcode=0
         terraform plan -var-file=../tfvars/test/test.tfvars -detailed-exitcode -no-color -out tfplan || export exitcode=$?
 
-        pwd
-        ls
         echo "exitcode=$exitcode" >> $GITHUB_OUTPUT
         
         if [ $exitcode -eq 1 ]; then
