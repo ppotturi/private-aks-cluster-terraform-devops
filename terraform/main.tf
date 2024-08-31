@@ -1,14 +1,19 @@
+
+
 terraform {
+  required_version = "~> 1.9.5"
   required_providers {
     azurerm = {
       source  = "hashicorp/azurerm"
-      version = "3.50"
+      version = "~> 3.99.0"
     }
   }
 }
 
 provider "azurerm" {
   features {}
+
+  subscription_id = var.subscription_id
 }
 
 terraform {
@@ -173,8 +178,8 @@ module "aks_cluster" {
   default_node_pool_vm_size                = var.default_node_pool_vm_size
   vnet_subnet_id                           = module.aks_network.subnet_ids[var.default_node_pool_subnet_name]
   default_node_pool_availability_zones     = var.default_node_pool_availability_zones
-  default_node_pool_node_labels            = var.default_node_pool_node_labels
-  default_node_pool_node_taints            = var.default_node_pool_node_taints
+  # default_node_pool_node_labels            = var.default_node_pool_node_labels
+  # default_node_pool_node_taints            = var.default_node_pool_node_taints
   default_node_pool_enable_auto_scaling    = var.default_node_pool_enable_auto_scaling
   default_node_pool_enable_host_encryption = var.default_node_pool_enable_host_encryption
   default_node_pool_enable_node_public_ip  = var.default_node_pool_enable_node_public_ip
@@ -194,7 +199,7 @@ module "aks_cluster" {
   admin_group_object_ids                   = var.admin_group_object_ids
   azure_rbac_enabled                       = var.azure_rbac_enabled
   admin_username                           = var.admin_username
-  ssh_public_key                           = var.ssh_public_key
+  # ssh_public_key                           = var.ssh_public_key
   keda_enabled                             = var.keda_enabled
   vertical_pod_autoscaler_enabled          = var.vertical_pod_autoscaler_enabled
   workload_identity_enabled                = var.workload_identity_enabled
@@ -240,63 +245,63 @@ module "storage_account" {
   replication_type            = var.storage_account_replication_type
 }
 
-module "bastion_host" {
-  source                       = "./modules/bastion_host"
-  name                         = var.bastion_host_name
-  location                     = var.location
-  resource_group_name          = azurerm_resource_group.rg.name
-  subnet_id                    = module.hub_network.subnet_ids["AzureBastionSubnet"]
-  log_analytics_workspace_id   = module.log_analytics_workspace.id
-}
+# module "bastion_host" {
+#   source                       = "./modules/bastion_host"
+#   name                         = var.bastion_host_name
+#   location                     = var.location
+#   resource_group_name          = azurerm_resource_group.rg.name
+#   subnet_id                    = module.hub_network.subnet_ids["AzureBastionSubnet"]
+#   log_analytics_workspace_id   = module.log_analytics_workspace.id
+# }
 
-module "virtual_machine" {
-  source                              = "./modules/virtual_machine"
-  name                                = var.vm_name
-  size                                = var.vm_size
-  location                            = var.location
-  public_ip                           = var.vm_public_ip
-  vm_user                             = var.admin_username
-  admin_ssh_public_key                = var.ssh_public_key
-  os_disk_image                       = var.vm_os_disk_image
-  domain_name_label                   = var.domain_name_label
-  resource_group_name                 = azurerm_resource_group.rg.name
-  subnet_id                           = module.aks_network.subnet_ids[var.vm_subnet_name]
-  os_disk_storage_account_type        = var.vm_os_disk_storage_account_type
-  boot_diagnostics_storage_account    = module.storage_account.primary_blob_endpoint
-  log_analytics_workspace_id          = module.log_analytics_workspace.workspace_id
-  log_analytics_workspace_key         = module.log_analytics_workspace.primary_shared_key
-  log_analytics_workspace_resource_id = module.log_analytics_workspace.id
-  script_storage_account_name         = var.script_storage_account_name
-  script_storage_account_key          = var.script_storage_account_key
-  container_name                      = var.container_name
-  script_name                         = var.script_name
-}
+# module "virtual_machine" {
+#   source                              = "./modules/virtual_machine"
+#   name                                = var.vm_name
+#   size                                = var.vm_size
+#   location                            = var.location
+#   public_ip                           = var.vm_public_ip
+#   vm_user                             = var.admin_username
+#   admin_ssh_public_key                = var.ssh_public_key
+#   os_disk_image                       = var.vm_os_disk_image
+#   domain_name_label                   = var.domain_name_label
+#   resource_group_name                 = azurerm_resource_group.rg.name
+#   subnet_id                           = module.aks_network.subnet_ids[var.vm_subnet_name]
+#   os_disk_storage_account_type        = var.vm_os_disk_storage_account_type
+#   boot_diagnostics_storage_account    = module.storage_account.primary_blob_endpoint
+#   log_analytics_workspace_id          = module.log_analytics_workspace.workspace_id
+#   log_analytics_workspace_key         = module.log_analytics_workspace.primary_shared_key
+#   log_analytics_workspace_resource_id = module.log_analytics_workspace.id
+#   script_storage_account_name         = var.script_storage_account_name
+#   script_storage_account_key          = var.script_storage_account_key
+#   container_name                      = var.container_name
+#   script_name                         = var.script_name
+# }
 
-module "node_pool" {
-  source = "./modules/node_pool"
-  resource_group_name = azurerm_resource_group.rg.name
-  kubernetes_cluster_id = module.aks_cluster.id
-  name                         = var.additional_node_pool_name
-  vm_size                      = var.additional_node_pool_vm_size
-  mode                         = var.additional_node_pool_mode
-  node_labels                  = var.additional_node_pool_node_labels
-  node_taints                  = var.additional_node_pool_node_taints
-  availability_zones           = var.additional_node_pool_availability_zones
-  vnet_subnet_id               = module.aks_network.subnet_ids[var.additional_node_pool_subnet_name]
-  enable_auto_scaling          = var.additional_node_pool_enable_auto_scaling
-  enable_host_encryption       = var.additional_node_pool_enable_host_encryption
-  enable_node_public_ip        = var.additional_node_pool_enable_node_public_ip
-  orchestrator_version         = var.kubernetes_version
-  max_pods                     = var.additional_node_pool_max_pods
-  max_count                    = var.additional_node_pool_max_count
-  min_count                    = var.additional_node_pool_min_count
-  node_count                   = var.additional_node_pool_node_count
-  os_type                      = var.additional_node_pool_os_type
-  priority                     = var.additional_node_pool_priority
-  tags                         = var.tags
+# module "node_pool" {
+#   source = "./modules/node_pool"
+#   resource_group_name = azurerm_resource_group.rg.name
+#   kubernetes_cluster_id = module.aks_cluster.id
+#   name                         = var.additional_node_pool_name
+#   vm_size                      = var.additional_node_pool_vm_size
+#   mode                         = var.additional_node_pool_mode
+#   node_labels                  = var.additional_node_pool_node_labels
+#   node_taints                  = var.additional_node_pool_node_taints
+#   availability_zones           = var.additional_node_pool_availability_zones
+#   vnet_subnet_id               = module.aks_network.subnet_ids[var.additional_node_pool_subnet_name]
+#   enable_auto_scaling          = var.additional_node_pool_enable_auto_scaling
+#   enable_host_encryption       = var.additional_node_pool_enable_host_encryption
+#   enable_node_public_ip        = var.additional_node_pool_enable_node_public_ip
+#   orchestrator_version         = var.kubernetes_version
+#   max_pods                     = var.additional_node_pool_max_pods
+#   max_count                    = var.additional_node_pool_max_count
+#   min_count                    = var.additional_node_pool_min_count
+#   node_count                   = var.additional_node_pool_node_count
+#   os_type                      = var.additional_node_pool_os_type
+#   priority                     = var.additional_node_pool_priority
+#   tags                         = var.tags
 
-  depends_on                   = [module.routetable]
-}
+#   depends_on                   = [module.routetable]
+# }
 
 module "key_vault" {
   source                          = "./modules/key_vault"
