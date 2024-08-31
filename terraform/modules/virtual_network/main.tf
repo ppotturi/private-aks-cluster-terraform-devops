@@ -1,11 +1,11 @@
 terraform {
   required_providers {
     azurerm = {
-      source  = "hashicorp/azurerm"
+      source = "hashicorp/azurerm"
     }
   }
 
-  required_version = ">= 0.14.9"
+  required_version = "~> 1.9.5"
 }
 
 resource "azurerm_virtual_network" "vnet" {
@@ -17,7 +17,7 @@ resource "azurerm_virtual_network" "vnet" {
 
   lifecycle {
     ignore_changes = [
-        tags
+      tags
     ]
   }
 }
@@ -25,12 +25,12 @@ resource "azurerm_virtual_network" "vnet" {
 resource "azurerm_subnet" "subnet" {
   for_each = { for subnet in var.subnets : subnet.name => subnet }
 
-  name                                           = each.key
-  resource_group_name                            = var.resource_group_name
-  virtual_network_name                           = azurerm_virtual_network.vnet.name
-  address_prefixes                               = each.value.address_prefixes
-  private_endpoint_network_policies_enabled = each.value.private_endpoint_network_policies_enabled
-  private_link_service_network_policies_enabled  = each.value.private_link_service_network_policies_enabled
+  name                                          = each.key
+  resource_group_name                           = var.resource_group_name
+  virtual_network_name                          = azurerm_virtual_network.vnet.name
+  address_prefixes                              = each.value.address_prefixes
+  # private_endpoint_network_policies_enabled     = each.value.private_endpoint_network_policies_enabled
+  private_link_service_network_policies_enabled = each.value.private_link_service_network_policies_enabled
 }
 
 resource "azurerm_monitor_diagnostic_setting" "settings" {

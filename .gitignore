@@ -31,3 +31,15 @@ override.tf.json
 # Include tfplan files to ignore the plan output of command: terraform plan -out=tfplan
 # example: *tfplan*
 key
+source/obj/Debug/netcoreapp3.1/SyntheticApi.AssemblyInfo.cs
+source/obj/Debug/netcoreapp3.1/SyntheticApi.AssemblyInfoInputs.cache
+source/obj/Debug/netcoreapp3.1/SyntheticApi.csproj.AssemblyReference.cache
+source/obj/Debug/netcoreapp3.1/SyntheticApi.GeneratedMSBuildEditorConfig.editorconfig
+source/obj/Debug/netcoreapp3.1/SyntheticApi.RazorAssemblyInfo.cache
+source/obj/Debug/netcoreapp3.1/SyntheticApi.RazorAssemblyInfo.cs
+source/obj/Debug/netcoreapp3.1/SyntheticApi.AssemblyInfo.cs
+source/obj/Debug/netcoreapp3.1/SyntheticApi.AssemblyInfoInputs.cache
+source/obj/Debug/netcoreapp3.1/SyntheticApi.csproj.AssemblyReference.cache
+source/obj/Debug/netcoreapp3.1/SyntheticApi.GeneratedMSBuildEditorConfig.editorconfig
+source/obj/Debug/netcoreapp3.1/SyntheticApi.RazorAssemblyInfo.cache
+source/obj/Debug/netcoreapp3.1/SyntheticApi.RazorAssemblyInfo.cs

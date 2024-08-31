@@ -2,11 +2,11 @@ terraform {
   required_providers {
     azurerm = {
       source  = "hashicorp/azurerm"
-      version = "~>3.50.0"
+      version = "~> 3.99.0"
     }
   }
 
-  required_version = ">= 0.14.9"
+  required_version = "~> 1.9.5"
 }
 
 resource "azurerm_virtual_network_peering" "peering" {

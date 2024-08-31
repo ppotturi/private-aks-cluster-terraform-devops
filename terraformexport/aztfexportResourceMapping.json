@@ -1,0 +1,447 @@
+{
+	"/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG": {
+		"resource_id": "/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG",
+		"resource_type": "azurerm_resource_group",
+		"resource_name": "res-0"
+	},
+	"/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.ContainerRegistry/registries/AATest1Acr": {
+		"resource_id": "/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.ContainerRegistry/registries/AATest1Acr",
+		"resource_type": "azurerm_container_registry",
+		"resource_name": "res-1"
+	},
+	"/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.ContainerRegistry/registries/AATest1Acr/scopeMaps/_repositories_admin": {
+		"resource_id": "/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.ContainerRegistry/registries/AATest1Acr/scopeMaps/_repositories_admin",
+		"resource_type": "azurerm_container_registry_scope_map",
+		"resource_name": "res-3"
+	},
+	"/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.ContainerRegistry/registries/AATest1Acr/scopeMaps/_repositories_pull": {
+		"resource_id": "/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.ContainerRegistry/registries/AATest1Acr/scopeMaps/_repositories_pull",
+		"resource_type": "azurerm_container_registry_scope_map",
+		"resource_name": "res-4"
+	},
+	"/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.ContainerRegistry/registries/AATest1Acr/scopeMaps/_repositories_pull_metadata_read": {
+		"resource_id": "/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.ContainerRegistry/registries/AATest1Acr/scopeMaps/_repositories_pull_metadata_read",
+		"resource_type": "azurerm_container_registry_scope_map",
+		"resource_name": "res-5"
+	},
+	"/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.ContainerRegistry/registries/AATest1Acr/scopeMaps/_repositories_push": {
+		"resource_id": "/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.ContainerRegistry/registries/AATest1Acr/scopeMaps/_repositories_push",
+		"resource_type": "azurerm_container_registry_scope_map",
+		"resource_name": "res-6"
+	},
+	"/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.ContainerRegistry/registries/AATest1Acr/scopeMaps/_repositories_push_metadata_write": {
+		"resource_id": "/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.ContainerRegistry/registries/AATest1Acr/scopeMaps/_repositories_push_metadata_write",
+		"resource_type": "azurerm_container_registry_scope_map",
+		"resource_name": "res-7"
+	},
+	"/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.ContainerService/managedClusters/AATest1Aks": {
+		"resource_id": "/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.ContainerService/managedClusters/AATest1Aks",
+		"resource_type": "azurerm_kubernetes_cluster",
+		"resource_name": "res-8"
+	},
+	"/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.ContainerService/managedClusters/AATest1Aks/agentPools/agentpool": {
+		"resource_id": "/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.ContainerService/managedClusters/AATest1Aks/agentPools/agentpool",
+		"resource_type": "azurerm_kubernetes_cluster_node_pool",
+		"resource_name": "res-9"
+	},
+	"/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.ContainerService/managedClusters/AATest2Aks": {
+		"resource_id": "/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.ContainerService/managedClusters/AATest2Aks",
+		"resource_type": "azurerm_kubernetes_cluster",
+		"resource_name": "res-13"
+	},
+	"/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.ContainerService/managedClusters/AATest2Aks/agentPools/agentpool": {
+		"resource_id": "/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.ContainerService/managedClusters/AATest2Aks/agentPools/agentpool",
+		"resource_type": "azurerm_kubernetes_cluster_node_pool",
+		"resource_name": "res-14"
+	},
+	"/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.KeyVault/vaults/AATest1AksKeyVault": {
+		"resource_id": "/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.KeyVault/vaults/AATest1AksKeyVault",
+		"resource_type": "azurerm_key_vault",
+		"resource_name": "res-16"
+	},
+	"/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.ManagedIdentity/userAssignedIdentities/AATest1AcrIdentity": {
+		"resource_id": "/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.ManagedIdentity/userAssignedIdentities/AATest1AcrIdentity",
+		"resource_type": "azurerm_user_assigned_identity",
+		"resource_name": "res-18"
+	},
+	"/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.ManagedIdentity/userAssignedIdentities/AATest1AksIdentity": {
+		"resource_id": "/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.ManagedIdentity/userAssignedIdentities/AATest1AksIdentity",
+		"resource_type": "azurerm_user_assigned_identity",
+		"resource_name": "res-19"
+	},
+	"/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.Network/azureFirewalls/AATest1Firewall": {
+		"resource_id": "/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.Network/azureFirewalls/AATest1Firewall",
+		"resource_type": "azurerm_firewall",
+		"resource_name": "res-20"
+	},
+	"/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.Network/firewallPolicies/AATest1FirewallPolicy": {
+		"resource_id": "/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.Network/firewallPolicies/AATest1FirewallPolicy",
+		"resource_type": "azurerm_firewall_policy",
+		"resource_name": "res-21"
+	},
+	"/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.Network/firewallPolicies/AATest1FirewallPolicy/ruleCollectionGroups/AksEgressPolicyRuleCollectionGroup": {
+		"resource_id": "/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.Network/firewallPolicies/AATest1FirewallPolicy/ruleCollectionGroups/AksEgressPolicyRuleCollectionGroup",
+		"resource_type": "azurerm_firewall_policy_rule_collection_group",
+		"resource_name": "res-22"
+	},
+	"/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.Network/privateDnsZones/privatelink.azurecr.io": {
+		"resource_id": "/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.Network/privateDnsZones/privatelink.azurecr.io",
+		"resource_type": "azurerm_private_dns_zone",
+		"resource_name": "res-23"
+	},
+	"/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.Network/privateDnsZones/privatelink.azurecr.io/virtualNetworkLinks/link_to_aatest1aksvnet": {
+		"resource_id": "/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.Network/privateDnsZones/privatelink.azurecr.io/virtualNetworkLinks/link_to_aatest1aksvnet",
+		"resource_type": "azurerm_private_dns_zone_virtual_network_link",
+		"resource_name": "res-24"
+	},
+	"/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.Network/privateDnsZones/privatelink.azurecr.io/virtualNetworkLinks/link_to_aatest1hubvnet": {
+		"resource_id": "/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.Network/privateDnsZones/privatelink.azurecr.io/virtualNetworkLinks/link_to_aatest1hubvnet",
+		"resource_type": "azurerm_private_dns_zone_virtual_network_link",
+		"resource_name": "res-25"
+	},
+	"/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.Network/privateDnsZones/privatelink.blob.core.windows.net": {
+		"resource_id": "/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.Network/privateDnsZones/privatelink.blob.core.windows.net",
+		"resource_type": "azurerm_private_dns_zone",
+		"resource_name": "res-26"
+	},
+	"/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.Network/privateDnsZones/privatelink.blob.core.windows.net/virtualNetworkLinks/link_to_aatest1aksvnet": {
+		"resource_id": "/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.Network/privateDnsZones/privatelink.blob.core.windows.net/virtualNetworkLinks/link_to_aatest1aksvnet",
+		"resource_type": "azurerm_private_dns_zone_virtual_network_link",
+		"resource_name": "res-27"
+	},
+	"/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.Network/privateDnsZones/privatelink.blob.core.windows.net/virtualNetworkLinks/link_to_aatest1hubvnet": {
+		"resource_id": "/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.Network/privateDnsZones/privatelink.blob.core.windows.net/virtualNetworkLinks/link_to_aatest1hubvnet",
+		"resource_type": "azurerm_private_dns_zone_virtual_network_link",
+		"resource_name": "res-28"
+	},
+	"/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.Network/privateDnsZones/privatelink.vaultcore.azure.net": {
+		"resource_id": "/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.Network/privateDnsZones/privatelink.vaultcore.azure.net",
+		"resource_type": "azurerm_private_dns_zone",
+		"resource_name": "res-29"
+	},
+	"/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.Network/privateDnsZones/privatelink.vaultcore.azure.net/virtualNetworkLinks/link_to_aatest1aksvnet": {
+		"resource_id": "/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.Network/privateDnsZones/privatelink.vaultcore.azure.net/virtualNetworkLinks/link_to_aatest1aksvnet",
+		"resource_type": "azurerm_private_dns_zone_virtual_network_link",
+		"resource_name": "res-30"
+	},
+	"/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.Network/privateDnsZones/privatelink.vaultcore.azure.net/virtualNetworkLinks/link_to_aatest1hubvnet": {
+		"resource_id": "/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.Network/privateDnsZones/privatelink.vaultcore.azure.net/virtualNetworkLinks/link_to_aatest1hubvnet",
+		"resource_type": "azurerm_private_dns_zone_virtual_network_link",
+		"resource_name": "res-31"
+	},
+	"/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.Network/privateEndpoints/AATest1AcrPrivateEndpoint": {
+		"resource_id": "/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.Network/privateEndpoints/AATest1AcrPrivateEndpoint",
+		"resource_type": "azurerm_private_endpoint",
+		"resource_name": "res-32"
+	},
+	"/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.Network/privateEndpoints/AATest1AksKeyVaultPrivateEndpoint": {
+		"resource_id": "/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.Network/privateEndpoints/AATest1AksKeyVaultPrivateEndpoint",
+		"resource_type": "azurerm_private_endpoint",
+		"resource_name": "res-34"
+	},
+	"/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.Network/privateEndpoints/BootxqyypwupPrivateEndpoint": {
+		"resource_id": "/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.Network/privateEndpoints/BootxqyypwupPrivateEndpoint",
+		"resource_type": "azurerm_private_endpoint",
+		"resource_name": "res-36"
+	},
+	"/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.Network/publicIPAddresses/AATest1FirewallPublicIp": {
+		"resource_id": "/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.Network/publicIPAddresses/AATest1FirewallPublicIp",
+		"resource_type": "azurerm_public_ip",
+		"resource_name": "res-38"
+	},
+	"/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.Network/routeTables/DefaultRouteTable": {
+		"resource_id": "/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.Network/routeTables/DefaultRouteTable",
+		"resource_type": "azurerm_route_table",
+		"resource_name": "res-39"
+	},
+	"/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.Network/routeTables/DefaultRouteTable/routes/kubenetfw_fw_r": {
+		"resource_id": "/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.Network/routeTables/DefaultRouteTable/routes/kubenetfw_fw_r",
+		"resource_type": "azurerm_route",
+		"resource_name": "res-40"
+	},
+	"/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.Network/virtualNetworks/AATest1AksVNet": {
+		"resource_id": "/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.Network/virtualNetworks/AATest1AksVNet",
+		"resource_type": "azurerm_virtual_network",
+		"resource_name": "res-41"
+	},
+	"/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.Network/virtualNetworks/AATest1AksVNet/subnets/PodSubnet": {
+		"resource_id": "/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.Network/virtualNetworks/AATest1AksVNet/subnets/PodSubnet",
+		"resource_type": "azurerm_subnet",
+		"resource_name": "res-42"
+	},
+	"/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.Network/virtualNetworks/AATest1AksVNet/subnets/SystemSubnet": {
+		"resource_id": "/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.Network/virtualNetworks/AATest1AksVNet/subnets/SystemSubnet",
+		"resource_type": "azurerm_subnet",
+		"resource_name": "res-43"
+	},
+	"/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.Network/virtualNetworks/AATest1AksVNet/subnets/SystemSubnet/routeTables/L3N1YnNjcmlwdGlvbnMvYTE4ZGRhOWItZGU2My00YmE2LTkzZDUtNmUyMjA3ZGZiOTJmL3Jlc291cmNlR3JvdXBzL0FBVGVzdDFSRy9wcm92aWRlcnMvTWljcm9zb2Z0Lk5ldHdvcmsvcm91dGVUYWJsZXMvRGVmYXVsdFJvdXRlVGFibGU=": {
+		"resource_id": "/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.Network/virtualNetworks/AATest1AksVNet/subnets/SystemSubnet",
+		"resource_type": "azurerm_subnet_route_table_association",
+		"resource_name": "res-44"
+	},
+	"/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.Network/virtualNetworks/AATest1AksVNet/subnets/UserSubnet": {
+		"resource_id": "/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.Network/virtualNetworks/AATest1AksVNet/subnets/UserSubnet",
+		"resource_type": "azurerm_subnet",
+		"resource_name": "res-45"
+	},
+	"/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.Network/virtualNetworks/AATest1AksVNet/subnets/UserSubnet/routeTables/L3N1YnNjcmlwdGlvbnMvYTE4ZGRhOWItZGU2My00YmE2LTkzZDUtNmUyMjA3ZGZiOTJmL3Jlc291cmNlR3JvdXBzL0FBVGVzdDFSRy9wcm92aWRlcnMvTWljcm9zb2Z0Lk5ldHdvcmsvcm91dGVUYWJsZXMvRGVmYXVsdFJvdXRlVGFibGU=": {
+		"resource_id": "/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.Network/virtualNetworks/AATest1AksVNet/subnets/UserSubnet",
+		"resource_type": "azurerm_subnet_route_table_association",
+		"resource_name": "res-46"
+	},
+	"/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.Network/virtualNetworks/AATest1AksVNet/subnets/VmSubnet": {
+		"resource_id": "/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.Network/virtualNetworks/AATest1AksVNet/subnets/VmSubnet",
+		"resource_type": "azurerm_subnet",
+		"resource_name": "res-47"
+	},
+	"/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.Network/virtualNetworks/AATest1AksVNet/virtualNetworkPeerings/AATest1AksVNetToAATest1HubVNet": {
+		"resource_id": "/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.Network/virtualNetworks/AATest1AksVNet/virtualNetworkPeerings/AATest1AksVNetToAATest1HubVNet",
+		"resource_type": "azurerm_virtual_network_peering",
+		"resource_name": "res-48"
+	},
+	"/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.Network/virtualNetworks/AATest1HubVNet": {
+		"resource_id": "/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.Network/virtualNetworks/AATest1HubVNet",
+		"resource_type": "azurerm_virtual_network",
+		"resource_name": "res-49"
+	},
+	"/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.Network/virtualNetworks/AATest1HubVNet/subnets/AzureBastionSubnet": {
+		"resource_id": "/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.Network/virtualNetworks/AATest1HubVNet/subnets/AzureBastionSubnet",
+		"resource_type": "azurerm_subnet",
+		"resource_name": "res-50"
+	},
+	"/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.Network/virtualNetworks/AATest1HubVNet/subnets/AzureFirewallSubnet": {
+		"resource_id": "/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.Network/virtualNetworks/AATest1HubVNet/subnets/AzureFirewallSubnet",
+		"resource_type": "azurerm_subnet",
+		"resource_name": "res-51"
+	},
+	"/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.Network/virtualNetworks/AATest1HubVNet/virtualNetworkPeerings/AATest1HubVNetToAATest1AksVNet": {
+		"resource_id": "/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.Network/virtualNetworks/AATest1HubVNet/virtualNetworkPeerings/AATest1HubVNetToAATest1AksVNet",
+		"resource_type": "azurerm_virtual_network_peering",
+		"resource_name": "res-52"
+	},
+	"/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.OperationalInsights/workspaces/AATest1AksWorkspace": {
+		"resource_id": "/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.OperationalInsights/workspaces/AATest1AksWorkspace",
+		"resource_type": "azurerm_log_analytics_workspace",
+		"resource_name": "res-53"
+	},
+	"/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.OperationalInsights/workspaces/AATest1AksWorkspace/savedSearches/LogManagement(AATest1AksWorkspace)_General|AlphabeticallySortedComputers": {
+		"resource_id": "/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.OperationalInsights/workspaces/AATest1AksWorkspace/savedSearches/LogManagement(AATest1AksWorkspace)_General|AlphabeticallySortedComputers",
+		"resource_type": "azurerm_log_analytics_saved_search",
+		"resource_name": "res-54"
+	},
+	"/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.OperationalInsights/workspaces/AATest1AksWorkspace/savedSearches/LogManagement(AATest1AksWorkspace)_General|StaleComputers": {
+		"resource_id": "/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.OperationalInsights/workspaces/AATest1AksWorkspace/savedSearches/LogManagement(AATest1AksWorkspace)_General|StaleComputers",
+		"resource_type": "azurerm_log_analytics_saved_search",
+		"resource_name": "res-55"
+	},
+	"/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.OperationalInsights/workspaces/AATest1AksWorkspace/savedSearches/LogManagement(AATest1AksWorkspace)_General|dataPointsPerManagementGroup": {
+		"resource_id": "/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.OperationalInsights/workspaces/AATest1AksWorkspace/savedSearches/LogManagement(AATest1AksWorkspace)_General|dataPointsPerManagementGroup",
+		"resource_type": "azurerm_log_analytics_saved_search",
+		"resource_name": "res-56"
+	},
+	"/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.OperationalInsights/workspaces/AATest1AksWorkspace/savedSearches/LogManagement(AATest1AksWorkspace)_General|dataTypeDistribution": {
+		"resource_id": "/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.OperationalInsights/workspaces/AATest1AksWorkspace/savedSearches/LogManagement(AATest1AksWorkspace)_General|dataTypeDistribution",
+		"resource_type": "azurerm_log_analytics_saved_search",
+		"resource_name": "res-57"
+	},
+	"/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.OperationalInsights/workspaces/AATest1AksWorkspace/savedSearches/LogManagement(AATest1AksWorkspace)_LogManagement|AllEvents": {
+		"resource_id": "/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.OperationalInsights/workspaces/AATest1AksWorkspace/savedSearches/LogManagement(AATest1AksWorkspace)_LogManagement|AllEvents",
+		"resource_type": "azurerm_log_analytics_saved_search",
+		"resource_name": "res-58"
+	},
+	"/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.OperationalInsights/workspaces/AATest1AksWorkspace/savedSearches/LogManagement(AATest1AksWorkspace)_LogManagement|AllSyslog": {
+		"resource_id": "/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.OperationalInsights/workspaces/AATest1AksWorkspace/savedSearches/LogManagement(AATest1AksWorkspace)_LogManagement|AllSyslog",
+		"resource_type": "azurerm_log_analytics_saved_search",
+		"resource_name": "res-59"
+	},
+	"/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.OperationalInsights/workspaces/AATest1AksWorkspace/savedSearches/LogManagement(AATest1AksWorkspace)_LogManagement|AllSyslogByFacility": {
+		"resource_id": "/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.OperationalInsights/workspaces/AATest1AksWorkspace/savedSearches/LogManagement(AATest1AksWorkspace)_LogManagement|AllSyslogByFacility",
+		"resource_type": "azurerm_log_analytics_saved_search",
+		"resource_name": "res-60"
+	},
+	"/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.OperationalInsights/workspaces/AATest1AksWorkspace/savedSearches/LogManagement(AATest1AksWorkspace)_LogManagement|AllSyslogByProcessName": {
+		"resource_id": "/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.OperationalInsights/workspaces/AATest1AksWorkspace/savedSearches/LogManagement(AATest1AksWorkspace)_LogManagement|AllSyslogByProcessName",
+		"resource_type": "azurerm_log_analytics_saved_search",
+		"resource_name": "res-61"
+	},
+	"/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.OperationalInsights/workspaces/AATest1AksWorkspace/savedSearches/LogManagement(AATest1AksWorkspace)_LogManagement|AllSyslogsWithErrors": {
+		"resource_id": "/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.OperationalInsights/workspaces/AATest1AksWorkspace/savedSearches/LogManagement(AATest1AksWorkspace)_LogManagement|AllSyslogsWithErrors",
+		"resource_type": "azurerm_log_analytics_saved_search",
+		"resource_name": "res-62"
+	},
+	"/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.OperationalInsights/workspaces/AATest1AksWorkspace/savedSearches/LogManagement(AATest1AksWorkspace)_LogManagement|AverageHTTPRequestTimeByClientIPAddress": {
+		"resource_id": "/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.OperationalInsights/workspaces/AATest1AksWorkspace/savedSearches/LogManagement(AATest1AksWorkspace)_LogManagement|AverageHTTPRequestTimeByClientIPAddress",
+		"resource_type": "azurerm_log_analytics_saved_search",
+		"resource_name": "res-63"
+	},
+	"/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.OperationalInsights/workspaces/AATest1AksWorkspace/savedSearches/LogManagement(AATest1AksWorkspace)_LogManagement|AverageHTTPRequestTimeHTTPMethod": {
+		"resource_id": "/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.OperationalInsights/workspaces/AATest1AksWorkspace/savedSearches/LogManagement(AATest1AksWorkspace)_LogManagement|AverageHTTPRequestTimeHTTPMethod",
+		"resource_type": "azurerm_log_analytics_saved_search",
+		"resource_name": "res-64"
+	},
+	"/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.OperationalInsights/workspaces/AATest1AksWorkspace/savedSearches/LogManagement(AATest1AksWorkspace)_LogManagement|CountIISLogEntriesClientIPAddress": {
+		"resource_id": "/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.OperationalInsights/workspaces/AATest1AksWorkspace/savedSearches/LogManagement(AATest1AksWorkspace)_LogManagement|CountIISLogEntriesClientIPAddress",
+		"resource_type": "azurerm_log_analytics_saved_search",
+		"resource_name": "res-65"
+	},
+	"/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.OperationalInsights/workspaces/AATest1AksWorkspace/savedSearches/LogManagement(AATest1AksWorkspace)_LogManagement|CountIISLogEntriesHTTPRequestMethod": {
+		"resource_id": "/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.OperationalInsights/workspaces/AATest1AksWorkspace/savedSearches/LogManagement(AATest1AksWorkspace)_LogManagement|CountIISLogEntriesHTTPRequestMethod",
+		"resource_type": "azurerm_log_analytics_saved_search",
+		"resource_name": "res-66"
+	},
+	"/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.OperationalInsights/workspaces/AATest1AksWorkspace/savedSearches/LogManagement(AATest1AksWorkspace)_LogManagement|CountIISLogEntriesHTTPUserAgent": {
+		"resource_id": "/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.OperationalInsights/workspaces/AATest1AksWorkspace/savedSearches/LogManagement(AATest1AksWorkspace)_LogManagement|CountIISLogEntriesHTTPUserAgent",
+		"resource_type": "azurerm_log_analytics_saved_search",
+		"resource_name": "res-67"
+	},
+	"/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.OperationalInsights/workspaces/AATest1AksWorkspace/savedSearches/LogManagement(AATest1AksWorkspace)_LogManagement|CountOfIISLogEntriesByHostRequestedByClient": {
+		"resource_id": "/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.OperationalInsights/workspaces/AATest1AksWorkspace/savedSearches/LogManagement(AATest1AksWorkspace)_LogManagement|CountOfIISLogEntriesByHostRequestedByClient",
+		"resource_type": "azurerm_log_analytics_saved_search",
+		"resource_name": "res-68"
+	},
+	"/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.OperationalInsights/workspaces/AATest1AksWorkspace/savedSearches/LogManagement(AATest1AksWorkspace)_LogManagement|CountOfIISLogEntriesByURLForHost": {
+		"resource_id": "/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.OperationalInsights/workspaces/AATest1AksWorkspace/savedSearches/LogManagement(AATest1AksWorkspace)_LogManagement|CountOfIISLogEntriesByURLForHost",
+		"resource_type": "azurerm_log_analytics_saved_search",
+		"resource_name": "res-69"
+	},
+	"/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.OperationalInsights/workspaces/AATest1AksWorkspace/savedSearches/LogManagement(AATest1AksWorkspace)_LogManagement|CountOfIISLogEntriesByURLRequestedByClient": {
+		"resource_id": "/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.OperationalInsights/workspaces/AATest1AksWorkspace/savedSearches/LogManagement(AATest1AksWorkspace)_LogManagement|CountOfIISLogEntriesByURLRequestedByClient",
+		"resource_type": "azurerm_log_analytics_saved_search",
+		"resource_name": "res-70"
+	},
+	"/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.OperationalInsights/workspaces/AATest1AksWorkspace/savedSearches/LogManagement(AATest1AksWorkspace)_LogManagement|CountOfWarningEvents": {
+		"resource_id": "/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.OperationalInsights/workspaces/AATest1AksWorkspace/savedSearches/LogManagement(AATest1AksWorkspace)_LogManagement|CountOfWarningEvents",
+		"resource_type": "azurerm_log_analytics_saved_search",
+		"resource_name": "res-71"
+	},
+	"/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.OperationalInsights/workspaces/AATest1AksWorkspace/savedSearches/LogManagement(AATest1AksWorkspace)_LogManagement|DisplayBreakdownRespondCodes": {
+		"resource_id": "/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.OperationalInsights/workspaces/AATest1AksWorkspace/savedSearches/LogManagement(AATest1AksWorkspace)_LogManagement|DisplayBreakdownRespondCodes",
+		"resource_type": "azurerm_log_analytics_saved_search",
+		"resource_name": "res-72"
+	},
+	"/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.OperationalInsights/workspaces/AATest1AksWorkspace/savedSearches/LogManagement(AATest1AksWorkspace)_LogManagement|EventsByEventLog": {
+		"resource_id": "/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.OperationalInsights/workspaces/AATest1AksWorkspace/savedSearches/LogManagement(AATest1AksWorkspace)_LogManagement|EventsByEventLog",
+		"resource_type": "azurerm_log_analytics_saved_search",
+		"resource_name": "res-73"
+	},
+	"/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.OperationalInsights/workspaces/AATest1AksWorkspace/savedSearches/LogManagement(AATest1AksWorkspace)_LogManagement|EventsByEventSource": {
+		"resource_id": "/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.OperationalInsights/workspaces/AATest1AksWorkspace/savedSearches/LogManagement(AATest1AksWorkspace)_LogManagement|EventsByEventSource",
+		"resource_type": "azurerm_log_analytics_saved_search",
+		"resource_name": "res-74"
+	},
+	"/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.OperationalInsights/workspaces/AATest1AksWorkspace/savedSearches/LogManagement(AATest1AksWorkspace)_LogManagement|EventsByEventsID": {
+		"resource_id": "/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.OperationalInsights/workspaces/AATest1AksWorkspace/savedSearches/LogManagement(AATest1AksWorkspace)_LogManagement|EventsByEventsID",
+		"resource_type": "azurerm_log_analytics_saved_search",
+		"resource_name": "res-75"
+	},
+	"/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.OperationalInsights/workspaces/AATest1AksWorkspace/savedSearches/LogManagement(AATest1AksWorkspace)_LogManagement|EventsInOMBetween2000to3000": {
+		"resource_id": "/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.OperationalInsights/workspaces/AATest1AksWorkspace/savedSearches/LogManagement(AATest1AksWorkspace)_LogManagement|EventsInOMBetween2000to3000",
+		"resource_type": "azurerm_log_analytics_saved_search",
+		"resource_name": "res-76"
+	},
+	"/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.OperationalInsights/workspaces/AATest1AksWorkspace/savedSearches/LogManagement(AATest1AksWorkspace)_LogManagement|EventsWithStartedinEventID": {
+		"resource_id": "/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.OperationalInsights/workspaces/AATest1AksWorkspace/savedSearches/LogManagement(AATest1AksWorkspace)_LogManagement|EventsWithStartedinEventID",
+		"resource_type": "azurerm_log_analytics_saved_search",
+		"resource_name": "res-77"
+	},
+	"/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.OperationalInsights/workspaces/AATest1AksWorkspace/savedSearches/LogManagement(AATest1AksWorkspace)_LogManagement|FindMaximumTimeTakenForEachPage": {
+		"resource_id": "/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.OperationalInsights/workspaces/AATest1AksWorkspace/savedSearches/LogManagement(AATest1AksWorkspace)_LogManagement|FindMaximumTimeTakenForEachPage",
+		"resource_type": "azurerm_log_analytics_saved_search",
+		"resource_name": "res-78"
+	},
+	"/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.OperationalInsights/workspaces/AATest1AksWorkspace/savedSearches/LogManagement(AATest1AksWorkspace)_LogManagement|IISLogEntriesForClientIP": {
+		"resource_id": "/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.OperationalInsights/workspaces/AATest1AksWorkspace/savedSearches/LogManagement(AATest1AksWorkspace)_LogManagement|IISLogEntriesForClientIP",
+		"resource_type": "azurerm_log_analytics_saved_search",
+		"resource_name": "res-79"
+	},
+	"/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.OperationalInsights/workspaces/AATest1AksWorkspace/savedSearches/LogManagement(AATest1AksWorkspace)_LogManagement|ListAllIISLogEntries": {
+		"resource_id": "/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.OperationalInsights/workspaces/AATest1AksWorkspace/savedSearches/LogManagement(AATest1AksWorkspace)_LogManagement|ListAllIISLogEntries",
+		"resource_type": "azurerm_log_analytics_saved_search",
+		"resource_name": "res-80"
+	},
+	"/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.OperationalInsights/workspaces/AATest1AksWorkspace/savedSearches/LogManagement(AATest1AksWorkspace)_LogManagement|NoOfConnectionsToOMSDKService": {
+		"resource_id": "/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.OperationalInsights/workspaces/AATest1AksWorkspace/savedSearches/LogManagement(AATest1AksWorkspace)_LogManagement|NoOfConnectionsToOMSDKService",
+		"resource_type": "azurerm_log_analytics_saved_search",
+		"resource_name": "res-81"
+	},
+	"/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.OperationalInsights/workspaces/AATest1AksWorkspace/savedSearches/LogManagement(AATest1AksWorkspace)_LogManagement|ServerRestartTime": {
+		"resource_id": "/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.OperationalInsights/workspaces/AATest1AksWorkspace/savedSearches/LogManagement(AATest1AksWorkspace)_LogManagement|ServerRestartTime",
+		"resource_type": "azurerm_log_analytics_saved_search",
+		"resource_name": "res-82"
+	},
+	"/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.OperationalInsights/workspaces/AATest1AksWorkspace/savedSearches/LogManagement(AATest1AksWorkspace)_LogManagement|Show404PagesList": {
+		"resource_id": "/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.OperationalInsights/workspaces/AATest1AksWorkspace/savedSearches/LogManagement(AATest1AksWorkspace)_LogManagement|Show404PagesList",
+		"resource_type": "azurerm_log_analytics_saved_search",
+		"resource_name": "res-83"
+	},
+	"/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.OperationalInsights/workspaces/AATest1AksWorkspace/savedSearches/LogManagement(AATest1AksWorkspace)_LogManagement|ShowServersThrowingInternalServerError": {
+		"resource_id": "/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.OperationalInsights/workspaces/AATest1AksWorkspace/savedSearches/LogManagement(AATest1AksWorkspace)_LogManagement|ShowServersThrowingInternalServerError",
+		"resource_type": "azurerm_log_analytics_saved_search",
+		"resource_name": "res-84"
+	},
+	"/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.OperationalInsights/workspaces/AATest1AksWorkspace/savedSearches/LogManagement(AATest1AksWorkspace)_LogManagement|TotalBytesReceivedByEachAzureRoleInstance": {
+		"resource_id": "/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.OperationalInsights/workspaces/AATest1AksWorkspace/savedSearches/LogManagement(AATest1AksWorkspace)_LogManagement|TotalBytesReceivedByEachAzureRoleInstance",
+		"resource_type": "azurerm_log_analytics_saved_search",
+		"resource_name": "res-85"
+	},
+	"/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.OperationalInsights/workspaces/AATest1AksWorkspace/savedSearches/LogManagement(AATest1AksWorkspace)_LogManagement|TotalBytesReceivedByEachIISComputer": {
+		"resource_id": "/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.OperationalInsights/workspaces/AATest1AksWorkspace/savedSearches/LogManagement(AATest1AksWorkspace)_LogManagement|TotalBytesReceivedByEachIISComputer",
+		"resource_type": "azurerm_log_analytics_saved_search",
+		"resource_name": "res-86"
+	},
+	"/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.OperationalInsights/workspaces/AATest1AksWorkspace/savedSearches/LogManagement(AATest1AksWorkspace)_LogManagement|TotalBytesRespondedToClientsByClientIPAddress": {
+		"resource_id": "/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.OperationalInsights/workspaces/AATest1AksWorkspace/savedSearches/LogManagement(AATest1AksWorkspace)_LogManagement|TotalBytesRespondedToClientsByClientIPAddress",
+		"resource_type": "azurerm_log_analytics_saved_search",
+		"resource_name": "res-87"
+	},
+	"/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.OperationalInsights/workspaces/AATest1AksWorkspace/savedSearches/LogManagement(AATest1AksWorkspace)_LogManagement|TotalBytesRespondedToClientsByEachIISServerIPAddress": {
+		"resource_id": "/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.OperationalInsights/workspaces/AATest1AksWorkspace/savedSearches/LogManagement(AATest1AksWorkspace)_LogManagement|TotalBytesRespondedToClientsByEachIISServerIPAddress",
+		"resource_type": "azurerm_log_analytics_saved_search",
+		"resource_name": "res-88"
+	},
+	"/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.OperationalInsights/workspaces/AATest1AksWorkspace/savedSearches/LogManagement(AATest1AksWorkspace)_LogManagement|TotalBytesSentByClientIPAddress": {
+		"resource_id": "/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.OperationalInsights/workspaces/AATest1AksWorkspace/savedSearches/LogManagement(AATest1AksWorkspace)_LogManagement|TotalBytesSentByClientIPAddress",
+		"resource_type": "azurerm_log_analytics_saved_search",
+		"resource_name": "res-89"
+	},
+	"/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.OperationalInsights/workspaces/AATest1AksWorkspace/savedSearches/LogManagement(AATest1AksWorkspace)_LogManagement|WarningEvents": {
+		"resource_id": "/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.OperationalInsights/workspaces/AATest1AksWorkspace/savedSearches/LogManagement(AATest1AksWorkspace)_LogManagement|WarningEvents",
+		"resource_type": "azurerm_log_analytics_saved_search",
+		"resource_name": "res-90"
+	},
+	"/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.OperationalInsights/workspaces/AATest1AksWorkspace/savedSearches/LogManagement(AATest1AksWorkspace)_LogManagement|WindowsFireawallPolicySettingsChanged": {
+		"resource_id": "/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.OperationalInsights/workspaces/AATest1AksWorkspace/savedSearches/LogManagement(AATest1AksWorkspace)_LogManagement|WindowsFireawallPolicySettingsChanged",
+		"resource_type": "azurerm_log_analytics_saved_search",
+		"resource_name": "res-91"
+	},
+	"/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.OperationalInsights/workspaces/AATest1AksWorkspace/savedSearches/LogManagement(AATest1AksWorkspace)_LogManagement|WindowsFireawallPolicySettingsChangedByMachines": {
+		"resource_id": "/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.OperationalInsights/workspaces/AATest1AksWorkspace/savedSearches/LogManagement(AATest1AksWorkspace)_LogManagement|WindowsFireawallPolicySettingsChangedByMachines",
+		"resource_type": "azurerm_log_analytics_saved_search",
+		"resource_name": "res-92"
+	},
+	"/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.Storage/storageAccounts/bootxqyypwup": {
+		"resource_id": "/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/AATest1RG/providers/Microsoft.Storage/storageAccounts/bootxqyypwup",
+		"resource_type": "azurerm_storage_account",
+		"resource_name": "res-629"
+	},
+	"/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/aatest1rg/providers/Microsoft.Network/privateDnsZones/privatelink.azurecr.io/A/aatest1acr": {
+		"resource_id": "/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/aatest1rg/providers/Microsoft.Network/privateDnsZones/privatelink.azurecr.io/A/aatest1acr",
+		"resource_type": "azurerm_private_dns_a_record",
+		"resource_name": "res-635"
+	},
+	"/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/aatest1rg/providers/Microsoft.Network/privateDnsZones/privatelink.azurecr.io/A/aatest1acr.uksouth.data": {
+		"resource_id": "/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/aatest1rg/providers/Microsoft.Network/privateDnsZones/privatelink.azurecr.io/A/aatest1acr.uksouth.data",
+		"resource_type": "azurerm_private_dns_a_record",
+		"resource_name": "res-636"
+	},
+	"/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/aatest1rg/providers/Microsoft.Network/privateDnsZones/privatelink.blob.core.windows.net/A/bootxqyypwup": {
+		"resource_id": "/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/aatest1rg/providers/Microsoft.Network/privateDnsZones/privatelink.blob.core.windows.net/A/bootxqyypwup",
+		"resource_type": "azurerm_private_dns_a_record",
+		"resource_name": "res-638"
+	},
+	"/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/aatest1rg/providers/Microsoft.Network/privateDnsZones/privatelink.vaultcore.azure.net/A/aatest1akskeyvault": {
+		"resource_id": "/subscriptions/a18dda9b-de63-4ba6-93d5-6e2207dfb92f/resourceGroups/aatest1rg/providers/Microsoft.Network/privateDnsZones/privatelink.vaultcore.azure.net/A/aatest1akskeyvault",
+		"resource_type": "azurerm_private_dns_a_record",
+		"resource_name": "res-640"
+	}
+}

@@ -1,5 +1,3 @@
 is_global = true
 build_property.RootNamespace = SyntheticApi
-build_property.ProjectDir = d:\Projects\AzureProjects\Terraform\azure-devops-aks\azure-devops-aks-azure-sample\source\
-build_property.EnableComHosting = 
-build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.ProjectDir = /Users/asad2/gitrepos/private-aks-cluster-terraform-devops/source/

@@ -1,11 +1,12 @@
 terraform {
   required_providers {
     azurerm = {
-      source  = "hashicorp/azurerm"
+      source = "hashicorp/azurerm"
+      version = "3.99.0"
     }
   }
 
-  required_version = ">= 0.14.9"
+  required_version = "~> 1.9.5"
 }
 
 resource "azurerm_user_assigned_identity" "aks_identity" {
@@ -22,58 +23,86 @@ resource "azurerm_user_assigned_identity" "aks_identity" {
   }
 }
 
-resource "azurerm_kubernetes_cluster" "aks_cluster" {
-  name                             = var.name
-  location                         = var.location
-  resource_group_name              = var.resource_group_name
-  kubernetes_version               = var.kubernetes_version
-  dns_prefix                       = var.dns_prefix
-  private_cluster_enabled          = var.private_cluster_enabled
-  automatic_channel_upgrade        = var.automatic_channel_upgrade
-  sku_tier                         = var.sku_tier
-  workload_identity_enabled        = var.workload_identity_enabled
-  oidc_issuer_enabled              = var.oidc_issuer_enabled
-  open_service_mesh_enabled        = var.open_service_mesh_enabled
-  image_cleaner_enabled            = var.image_cleaner_enabled
-  azure_policy_enabled             = var.azure_policy_enabled
-  http_application_routing_enabled = var.http_application_routing_enabled
+# resource "azurerm_kubernetes_cluster" "aks_cluster" {
+#   name                    = var.name
+#   location                = var.location
+#   resource_group_name     = var.resource_group_name
+#   kubernetes_version      = var.kubernetes_version
+#   dns_prefix              = var.dns_prefix
+#   private_cluster_enabled = var.private_cluster_enabled
+#   # automatic_channel_upgrade        = var.automatic_channel_upgrade
+#   sku_tier                         = var.sku_tier
+#   workload_identity_enabled        = var.workload_identity_enabled
+#   oidc_issuer_enabled              = var.oidc_issuer_enabled
+#   open_service_mesh_enabled        = var.open_service_mesh_enabled
+#   image_cleaner_enabled            = var.image_cleaner_enabled
+#   azure_policy_enabled             = var.azure_policy_enabled
+#   http_application_routing_enabled = var.http_application_routing_enabled
 
+#   default_node_pool {
+#     enable_auto_scaling = var.default_node_pool_enable_auto_scaling
+#     name           = var.default_node_pool_name
+#     vm_size        = var.default_node_pool_vm_size
+#     vnet_subnet_id = var.vnet_subnet_id
+#     upgrade_settings {
+#       max_surge = "10%"
+#     }
+#     # pod_subnet_id  = var.pod_subnet_id
+#     zones          = []
+#     # node_labels    = var.default_node_pool_node_labels
+#     # node_taints             = var.default_node_pool_node_taints
+#     # enable_auto_scaling     = var.default_node_pool_enable_auto_scaling
+#     # enable_host_encryption  = var.default_node_pool_enable_host_encryption
+#     # enable_node_public_ip   = var.default_node_pool_enable_node_public_ip
+#     # max_pods     = var.default_node_pool_max_pods
+#     max_count    = 1
+#     min_count    = 1
+#     # node_count   = 1
+#     # os_disk_type = var.default_node_pool_os_disk_type
+#     tags         = var.tags
+#     # type         = "VirtualMachineScaleSets"
+#   }
+
+  resource "azurerm_kubernetes_cluster" "aks_cluster" {
+  # automatic_channel_upgrade           = "patch"
+  dns_prefix                          = "AATest2Aks-dns"
+  location                            = "uksouth"
+  name                                = "AATest2Aks"
+  private_cluster_enabled             = true
+  private_cluster_public_fqdn_enabled = true
+  resource_group_name                 = "AATest1RG"
   default_node_pool {
-    name                    = var.default_node_pool_name
-    vm_size                 = var.default_node_pool_vm_size
-    vnet_subnet_id          = var.vnet_subnet_id
-    pod_subnet_id           = var.pod_subnet_id
-    zones                   = var.default_node_pool_availability_zones
-    node_labels             = var.default_node_pool_node_labels
-    node_taints             = var.default_node_pool_node_taints
-    enable_auto_scaling     = var.default_node_pool_enable_auto_scaling
-    enable_host_encryption  = var.default_node_pool_enable_host_encryption
-    enable_node_public_ip   = var.default_node_pool_enable_node_public_ip
-    max_pods                = var.default_node_pool_max_pods
-    max_count               = var.default_node_pool_max_count
-    min_count               = var.default_node_pool_min_count
-    node_count              = var.default_node_pool_node_count
-    os_disk_type            = var.default_node_pool_os_disk_type
-    tags                    = var.tags
-  }
-
-  linux_profile {
-    admin_username = var.admin_username
-    ssh_key {
-        key_data = var.ssh_public_key
+    type = "VirtualMachineScaleSets"
+    enable_auto_scaling = true
+    max_count           = 1
+    min_count           = 1
+    name                = "agentpool"
+    vm_size             = "Standard_DS2_v2"
+    vnet_subnet_id      = var.vnet_subnet_id
+    upgrade_settings {
+      max_surge = "10%"
     }
   }
 
+  # linux_profile {
+  #   admin_username = var.admin_username
+  #   ssh_key {
+  #       key_data = var.ssh_public_key
+  #   }
+  # }
+
   identity {
-    type = "UserAssigned"
+    type         = "UserAssigned"
     identity_ids = tolist([azurerm_user_assigned_identity.aks_identity.id])
   }
 
   network_profile {
-    dns_service_ip     = var.network_dns_service_ip
-    network_plugin     = var.network_plugin
-    outbound_type      = var.outbound_type
-    service_cidr       = var.network_service_cidr
+    dns_service_ip = var.network_dns_service_ip
+    network_plugin = var.network_plugin
+    network_policy = "calico"
+    network_plugin_mode = "overlay"
+    outbound_type  = var.outbound_type
+    service_cidr   = var.network_service_cidr
   }
 
   oms_agent {
@@ -85,18 +114,18 @@ resource "azurerm_kubernetes_cluster" "aks_cluster" {
     for_each = try(var.ingress_application_gateway.gateway_id, null) == null ? [] : [1]
 
     content {
-      gateway_id                 = var.ingress_application_gateway.gateway_id
-      subnet_cidr                = var.ingress_application_gateway.subnet_cidr
-      subnet_id                  = var.ingress_application_gateway.subnet_id
+      gateway_id  = var.ingress_application_gateway.gateway_id
+      subnet_cidr = var.ingress_application_gateway.subnet_cidr
+      subnet_id   = var.ingress_application_gateway.subnet_id
     }
   }
 
-  azure_active_directory_role_based_access_control {
-    managed                    = true
-    tenant_id                  = var.tenant_id
-    admin_group_object_ids     = var.admin_group_object_ids
-    azure_rbac_enabled         = var.azure_rbac_enabled
-  }
+  # azure_active_directory_role_based_access_control {
+  #   # managed                    = true
+  #   tenant_id              = var.tenant_id
+  #   admin_group_object_ids = var.admin_group_object_ids
+  #   azure_rbac_enabled     = var.azure_rbac_enabled
+  # }
 
   workload_autoscaler_profile {
     keda_enabled                    = var.keda_enabled
