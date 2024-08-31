@@ -8,18 +8,16 @@ terraform {
       version = "~> 3.99.0"
     }
   }
+
+  backend "azurerm" {
+  }
 }
 
 provider "azurerm" {
   use_oidc = true
   features {}
 
-  subscription_id = var.subscription_id
-}
-
-terraform {
-  backend "azurerm" {
-  }
+  subscription_id = "a18dda9b-de63-4ba6-93d5-6e2207dfb92f"
 }
 
 locals {
