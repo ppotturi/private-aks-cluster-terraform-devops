@@ -42,7 +42,7 @@ jobs:
     - name: Setup Terraform
       uses: hashicorp/setup-terraform@v3
       with:
-        terraform_version: "1.9.5"
+        wrappers: false
 
     # - name: Sign in to Azure with OIDC
     #   uses: Azure/login@v1.5.1
@@ -145,7 +145,7 @@ jobs:
     - name: Setup Terraform
       uses: hashicorp/setup-terraform@v3
       with:
-        terraform_version: "1.9.5"
+        wrappers: false
 
     # Initialize a new or existing Terraform working directory by creating initial files, loading any remote state, downloading modules, etc.
     - name: Terraform Init
