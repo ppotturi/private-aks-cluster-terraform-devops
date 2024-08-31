@@ -24,6 +24,9 @@ jobs:
   terraform-plan:
     name: 'Terraform Plan'
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./terraform
     env:
       #this is needed since we are running terraform with read-only permissions
       ARM_SKIP_PROVIDER_REGISTRATION: true
@@ -121,6 +124,9 @@ jobs:
     runs-on: ubuntu-latest
     environment: DEV
     needs: [terraform-plan]
+    defaults:
+      run:
+        working-directory: ./terraform
     
     steps:
     # Checkout the repository to the GitHub Actions runner
