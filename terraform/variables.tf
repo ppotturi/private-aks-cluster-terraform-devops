@@ -29,7 +29,7 @@ variable "location" {
 
 variable "resource_group_name" {
   description = "Specifies the resource group name"
-  default     = "BaboRG"
+  default     = "AATest2RG"
   type        = string
 }
 
