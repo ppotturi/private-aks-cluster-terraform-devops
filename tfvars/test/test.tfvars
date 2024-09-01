@@ -1,4 +1,4 @@
-resource_group_name          = "AATest1RG"
+resource_group_name          = "AATest2RG"
 aks_cluster_name             = "AATest1Aks"
 log_analytics_workspace_name = "AATest1AksWorkspace"
 domain_name_label            = "AATest1testvm"
