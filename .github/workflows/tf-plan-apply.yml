@@ -167,4 +167,4 @@ jobs:
     - name: Terraform Apply
       run: |
         terraform version
-        terraform apply -auto-approve -var-file=../tfvars/test/test.tfvars tfplan
+        terraform apply tfplan
