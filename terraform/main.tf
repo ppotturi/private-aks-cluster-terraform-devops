@@ -40,38 +40,38 @@ resource "azurerm_resource_group" "rg" {
   tags     = var.tags
 }
 
-# module "log_analytics_workspace" {
-#   source              = "./modules/log_analytics"
-#   name                = var.log_analytics_workspace_name
-#   location            = var.location
-#   resource_group_name = azurerm_resource_group.rg.name
-#   solution_plan_map   = var.solution_plan_map
-# }
+module "log_analytics_workspace" {
+  source              = "./modules/log_analytics"
+  name                = var.log_analytics_workspace_name
+  location            = var.location
+  resource_group_name = azurerm_resource_group.rg.name
+  solution_plan_map   = var.solution_plan_map
+}
 
-# module "hub_network" {
-#   source                     = "./modules/virtual_network"
-#   resource_group_name        = azurerm_resource_group.rg.name
-#   location                   = var.location
-#   vnet_name                  = var.hub_vnet_name
-#   address_space              = var.hub_address_space
-#   tags                       = var.tags
-#   log_analytics_workspace_id = module.log_analytics_workspace.id
+module "hub_network" {
+  source                     = "./modules/virtual_network"
+  resource_group_name        = azurerm_resource_group.rg.name
+  location                   = var.location
+  vnet_name                  = var.hub_vnet_name
+  address_space              = var.hub_address_space
+  tags                       = var.tags
+  log_analytics_workspace_id = module.log_analytics_workspace.id
 
-#   subnets = [
-#     {
-#       name : "AzureFirewallSubnet"
-#       address_prefixes : var.hub_firewall_subnet_address_prefix
-#       private_endpoint_network_policies_enabled : true
-#       private_link_service_network_policies_enabled : false
-#     },
-#     {
-#       name : "AzureBastionSubnet"
-#       address_prefixes : var.hub_bastion_subnet_address_prefix
-#       private_endpoint_network_policies_enabled : true
-#       private_link_service_network_policies_enabled : false
-#     }
-#   ]
-# }
+  subnets = [
+    {
+      name : "AzureFirewallSubnet"
+      address_prefixes : var.hub_firewall_subnet_address_prefix
+      private_endpoint_network_policies_enabled : true
+      private_link_service_network_policies_enabled : false
+    },
+    {
+      name : "AzureBastionSubnet"
+      address_prefixes : var.hub_bastion_subnet_address_prefix
+      private_endpoint_network_policies_enabled : true
+      private_link_service_network_policies_enabled : false
+    }
+  ]
+}
 
 # module "aks_network" {
 #   source                     = "./modules/virtual_network"
