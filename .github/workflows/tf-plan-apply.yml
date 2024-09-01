@@ -42,7 +42,7 @@ jobs:
     - name: Setup Terraform
       uses: hashicorp/setup-terraform@v3
       with:
-        wrappers: false
+        terraform_wrapper: true
 
     # - name: Sign in to Azure with OIDC
     #   uses: Azure/login@v1.5.1
@@ -146,7 +146,7 @@ jobs:
     - name: Setup Terraform
       uses: hashicorp/setup-terraform@v3
       with:
-        wrappers: false
+        terraform_wrapper: true
 
     - name: terraform version
       id: tf-version
@@ -165,4 +165,6 @@ jobs:
 
     # Terraform Apply
     - name: Terraform Apply
-      run: terraform apply -auto-approve -var-file=../tfvars/test/test.tfvars #tfplan
+      run: |
+        terraform version
+        terraform apply -auto-approve -var-file=../tfvars/test/test.tfvars tfplan
