@@ -41,8 +41,8 @@ jobs:
     # Install the latest version of the Terraform CLI
     - name: Setup Terraform
       uses: hashicorp/setup-terraform@v3
-      # with:
-      #   wrappers: false
+      with:
+        wrappers: false
 
     # - name: Sign in to Azure with OIDC
     #   uses: Azure/login@v1.5.1
@@ -66,6 +66,7 @@ jobs:
       id: tf-plan
       run: |
         export exitcode=0
+        terraform version
         terraform plan -var-file=../tfvars/test/test.tfvars -detailed-exitcode -no-color -out tfplan || export exitcode=$?
 
         echo "exitcode=$exitcode" >> $GITHUB_OUTPUT
@@ -144,8 +145,13 @@ jobs:
     # Install the latest version of Terraform CLI and configure the Terraform CLI configuration file with a Terraform Cloud user API token
     - name: Setup Terraform
       uses: hashicorp/setup-terraform@v3
-      # with:
-      #   wrappers: false
+      with:
+        wrappers: false
+
+    - name: terraform version
+      id: tf-version
+      run: |
+        terraform version
 
     # Initialize a new or existing Terraform working directory by creating initial files, loading any remote state, downloading modules, etc.
     - name: Terraform Init
